@@ -1,5 +1,7 @@
 //import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:fundith/views/first_view.dart';
+import 'package:fundith/views/signup_view.dart';
 //import 'package:flutter_screenutil/screenutil.dart';
 
 import 'details.dart';

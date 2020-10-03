@@ -11,5 +11,5 @@ class Provider extends InheritedWidget{
   bool updateShouldNotify(InheritedWidget oldWidget){
     return true;
   }
-  static Provider of(BuildContext context) => (context.inheritFromWidgetOfExactType(Provider) as Provider );
+  static Provider of(BuildContext context) => (context.dependOnInheritedWidgetOfExactType() as Provider );
 }

@@ -71,7 +71,7 @@ class _SignUpViewState extends State<SignUpView>{
 
   }   else if (authFormType == AuthFormType.reset){
       await auth.sendPasswordResetEmail(_email);
-      print('password reset email sent');
+      print('password reset email sent:');
        _warning = "A password reset link has been sent to $_email";
       setState(() {
       authFormType = AuthFormType.signIn;

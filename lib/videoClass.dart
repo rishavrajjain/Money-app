@@ -17,13 +17,14 @@ class _VideoClassState extends State<VideoClass> {
 
   @override
   void initState() {
+    print('working');
     controller = YoutubePlayerController(
-        initialVideoId: YoutubePlayer.convertUrlToId(widget.videoURL),
-        flags: YoutubePlayerFlags(
+      initialVideoId: YoutubePlayer.convertUrlToId(widget.videoURL),
+      flags: YoutubePlayerFlags(
         autoPlay: false,
         mute: false,
-    ),
-        );
+      ),
+    );
     super.initState();
   }
 
@@ -33,7 +34,9 @@ class _VideoClassState extends State<VideoClass> {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          YoutubePlayer(controller: controller,),
+          YoutubePlayer(
+            controller: controller,
+          ),
           Padding(
             padding: EdgeInsets.all(10),
             child: Text(widget.title,
