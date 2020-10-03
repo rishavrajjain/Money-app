@@ -1,10 +1,7 @@
 //import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:fundith/views/first_view.dart';
-import 'package:fundith/views/signup_view.dart';
-//import 'package:flutter_screenutil/screenutil.dart';
+import 'package:fundith/profile-menu.dart';
 
-import 'details.dart';
 //import 'profile-menu.dart';
 
 void main() async {
@@ -58,7 +55,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (context) => Details(),
+        '/': (context) => ProfileMenu(),
         // When navigating to the "/second" route, build the SecondScreen widget.
         // '/second': (context) => SecondScreen(),
       },

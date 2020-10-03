@@ -17,7 +17,7 @@ class _VideoClassState extends State<VideoClass> {
 
   @override
   void initState() {
-    print('working');
+    print('');
     controller = YoutubePlayerController(
       initialVideoId: YoutubePlayer.convertUrlToId(widget.videoURL),
       flags: YoutubePlayerFlags(
